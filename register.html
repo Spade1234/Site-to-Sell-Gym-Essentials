@@ -1,0 +1,90 @@
+<!--<?php include('server.php') ?>-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="register port" content="with=device-width,initial-scale=1.0">
+    
+    <title>REGISTRATION FORM</title>
+    <style>
+        h2 {
+    color:white;
+    font-size: 30px;
+    text-shadow: 25px rgb(72, 31, 110);
+    text-align: center;
+}
+form {
+    color: whitesmoke;
+    text-align: center;
+}
+ div {
+     background-image: url("registration.jpeg");
+     
+     padding: 200px 100px;
+     margin: 100px;
+     
+ }
+ input[type=submit] {
+    width: 150px;
+    background-color:black;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+
+  }
+  body{
+    
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"]{
+    width: 150px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+input[type="submit"]:hover{
+    background-color: white;
+    color: black;
+}
+    </style>
+    
+</head>
+
+
+<body>
+    <div>
+    <section class="header">
+        
+    </section>
+   
+     <h2>REGISTER YOURSELF NOW</h2>
+    
+    <form method="post" action="register.php">
+       <!-- <?php include('errors.php'); ?>-->
+        
+        <label for="email"></label>Enter your email id:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="password"></label>Enter password:</label>
+        <input type="password" id="password" name="pssword_1" required>
+        <br><br>
+        <label for="confirm password"></label>Confirm password:</label>
+        <input type="password" id="confirm_password" name="pssword_2" required>
+        <br><br>
+        <input type="submit" name="submit" value="REGISTER">
+        <br><br>
+        <p>Already registered?</p>
+
+        <a href="gymlogin.php">SIGN IN</a>
+        </select>
+    </form>
+ </div>
+</body>
+
+</html>

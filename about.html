@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>gym website design</title>
+        
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/823da7cf51.js" crossorigin="anonymous"></script>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+.header img{
+    width: 150px;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.image-resiz{
+    height: 200px;
+}
+
+.etta {
+  position: center;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  
+}
+
+
+
+.etta h1 {
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Cookie";
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.video-container {
+  position: absolute;
+  top: 40;
+  left: 0;
+  bottom: 40;
+  width: 100%;
+}
+
+
+.about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.about-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    width: 30%;
+    padding:15px;   
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.about-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight:500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity:0;
+    transition:0.5s;
+}
+.layer:hover h3{
+    bottom:49%;
+    opacity: 1;
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons.fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.fa-heart-o{
+    color: #f44336;
+}
+</style> 
+</head>
+  <body>
+    <section class="header">
+      
+      <div class="etta">
+        <a href="gymhomepage.html"><img src="gymgym.jpg"></a>
+
+        <h1>FIT HIT</h1>
+  
+        <div class="video-container">
+            <div class="color-overlay"></div>
+            <video autoplay loop muted>
+                <source src="gymvideo.mp4" type="video/mp4">
+            </video>
+        </div>
+  
+    </div>
+    <nav>
+      
+      <div class="nav-links">
+        <ul>
+          <li><a href="gymhomepage.php">HOME</a></li>
+          <li><a href="profile.php">PROFILE</a></li>
+          <li><a href="batch.html">BATCH</a></li>
+          <li><a href="gympayment.html">PAYMENT</a></li>
+          <li><a href="gymcontact.html">CONTACT</a></li>
+          <li><a href="logout.php">LOGOUT</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+  <div style="height:375px;width:100%">
+      <p><b><u>Our Story</u></b><br>
+        FIT HIT was founded in 2014 as a family owned and operated business. The FIT HIT founders didn't want it to be just another
+         gym in the locality- they wanted to be the best in the industry and set their minds to doing so! Since its birth, FIT HIT
+        has helped over 12,000 customers live longer, happier and healthier lives.<br>
+        
+        <b><u>What we do</u></b><br>
+        We want to help you live a fit and healthy lifestyle! We do this by helping you find the most suitable workouts or
+        commercial gym studio, keeping your budget, lifestyle and fitness goals in mind. We stock a wide range of gym equipment,
+        with strength equipment, cardio, cross training and so much more. Our awesome team is always keen to help, so please call
+        us to discuss your needs.<br>
+        <b><u>Customer Service</u></b><br>
+        At Gym and Fitness, customers are at the centre of what we do and why we do it! We have a team of knowledgeable fitness trainers
+        who are ready to assist you with your gym equipment and workout needs. Our crew will be able to answer your questions
+        to the best way to integrate a piece of schedule into your workout routine. We work hard to
+        ensure we have strong relationships with our customer bringing you the best possible results in the industry.<br> 
+
+      <b><u>Culture</u></b><br>
+      At Gym and Fitness, we believe that building a positive culture is incredibly important. The business is underpinned by six core
+      values which speak of our commitment to our customers, staff, the industry and our business as a whole. We believe in encouraging,
+      supporting, challenging, learning and growing to be the best. At Gym and Fitness, every morsel of feedback is a nugget of
+      shiny gold because it gives us the opportunity to provide the best customer experience.
+      
+      
+      
+      </p>
+  </div>
+
+    </section>
+    <!--------------ABOUT------------------------>
+    <section class="about">
+      <h1>About Gym</h1>
+      <p>HIT FIT Fitness offers a personalized, accessible, and inclusive place for your workout!<br>
+         Achieve your individual fitness goals under the supervision of certified trainers. Get added benefits of qualified<br>
+        equipments, spacious workout area, seperate workout area for ladies and shower facilities.</p>
+      <div class="row">
+        <div class="about-col">
+          <img class="img-responsive image-resiz" src="f1.jpg">
+          <div class="layer">
+            <h3>SPACIOUS WORKOUT AREA</h3>
+          </div>
+        </div>
+        <div class="about-col">
+          <img class="img-responsive image-resiz" src="f2.jpg">
+          <div class="layer">
+            <h3>QUALITY EQUIPMENTS</h3>
+          </div>
+        </div>
+        <div class="about-col">
+          <img class="img-responsive image-resiz" src="f3.jpg">
+          <div class="layer">
+            <h3>SEPERATE AREA FOR LADIES</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------------------footer--------------------->
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>Follow Us On:
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-whatsapp-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-instagram-square"></i>
+       
+      </div>
+      <p>Made with <i class="fa fa-heart-o" aria-hidden="true"></i>by Pratheeksha square</p>
+    </section>
+
+
+  </body>
+</html>

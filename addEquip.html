@@ -1,0 +1,57 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    background-image: url(registration.jpeg);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+/* background: rgb(219, 226,226); */
+}
+.row{
+/* background: white; */
+/* width: 20px; */
+position: center;
+}
+.signupbtn{
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.signupbtn:hover{
+background: white;
+border: 1px solid;
+color: black;
+}
+    </style>
+</head>
+<body>
+    <p style="color: white;"><b><u>Add Equipment</u></b></p>
+    <form action="addEquip.php" method="post">
+        <div class="form row">
+            <div class="col-lg-7">
+        <label>Equipment Name:</label>
+        <br>
+        <input type="text" name="etype" style="width: 250px;height: 40px;">
+        </div></div>
+
+        <br><br>
+        
+        <div>
+            <button type="submit" class="signupbtn mt-3 mb-5">Add</button>
+        </div>
+    </form>
+</body>
+ </html>
